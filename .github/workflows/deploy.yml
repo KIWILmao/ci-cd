@@ -36,7 +36,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker pull 100xdevs/firstimage:latest
+            sudo docker pull kiwilmao/firstimage:latest
             sudo docker stop firstimage || true
             sudo docker rm firstimage || true
-            sudo docker run -d --name firstimage -p 3005:3000 100xdevs/firstimage:latest
+            sudo docker run -d --name firstimage -p 3005:3000 kiwilmao/firstimage:latest
