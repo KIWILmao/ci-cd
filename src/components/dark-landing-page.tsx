@@ -52,10 +52,16 @@ export function DarkLandingPage() {
                               </p>
                           </div>
                           <div className="space-x-4">
-                              <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors">
-                                  Get Started
-                                  <ArrowRight className="ml-2 h-4 w-4" />
-                              </Button>
+                                  <Link
+                                      href="https://github.com/KIWILmao/ci-cd"
+                                      rel="noopener noreferrer"
+                                      target="_blank"
+                                  >
+                                    <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors">
+                                      Get Started
+                                      <ArrowRight className="ml-2 h-4 w-4" />
+                                    </Button>
+                                  </Link>
                               <Button
                                   variant="outline"
                                   className="text-gray-200 border-gray-700 bg-gray-800 transition-colors"
